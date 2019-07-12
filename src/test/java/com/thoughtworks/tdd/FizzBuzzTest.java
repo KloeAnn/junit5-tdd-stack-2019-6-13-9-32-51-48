@@ -77,4 +77,17 @@ public class FizzBuzzTest {
         //then
         assertThat(result,is("Buzz"));
     }
+
+    @Test
+    public void should_return_Whizz_when_student_is_7(){
+        //given
+        int student=7;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+
+        //when
+        String result=fizzBuzz.say(student);
+
+        //then
+        assertThat(result,is("Whizz"));
+    }
 }
