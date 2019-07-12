@@ -10,7 +10,7 @@ public class FizzBuzz {
             s+="Buzz";
         }
         if(student%7==0){
-            return "Whizz";
+            s+="Whizz";
         }
         return s;
     }
