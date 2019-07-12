@@ -90,4 +90,17 @@ public class FizzBuzzTest {
         //then
         assertThat(result,is("Whizz"));
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_student_is_15(){
+        //given
+        int student=15;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+
+        //when
+        String result=fizzBuzz.say(student);
+
+        //then
+        assertThat(result,is("FizzBuzz"));
+    }
 }
