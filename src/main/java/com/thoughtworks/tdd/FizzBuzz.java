@@ -2,15 +2,16 @@ package com.thoughtworks.tdd;
 
 public class FizzBuzz {
     public String say(int student){
+        String s="";
         if(student%3==0){
-            return "Fizz";
+            s+="Fizz";
         }
         if(student%5==0){
-            return "Buzz";
+            s+="Buzz";
         }
         if(student%7==0){
             return "Whizz";
         }
-        return student+"";
+        return s;
     }
 }
